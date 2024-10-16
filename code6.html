@@ -1,0 +1,59 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        body{
+            color: black;
+            font-size: large;
+        }
+
+    </style>
+    <body>
+        <script>
+        let i,j,l,k;
+        var m =9;
+        let n =1;
+
+        for(i=1 ; i<= 5 ; i++){
+            for (j = 1; j <= 5-i ; j++){
+                document.write("&nbsp;&nbsp;")
+            }
+            for ( k =1 ; k <=n ; k++){
+                document.write("*")
+                
+            }
+            
+            n=n+2;
+            document.write("<br/>")
+        }
+
+
+        for(i=5 ; i>=1 ; i--){
+            
+            for(k=1 ; k <= 5-i ; k++){
+                document.write("&nbsp;&nbsp;");
+            }
+            // for(j=1 ; j <= i ; j++){
+            //     document.write("*")
+            // }
+            // for (l =1 ; l<=i-1 ; l++){
+            //     document.write("*")
+            // }
+          
+            for (j = 1 ; j<=m ; j++){
+                document.write("*")
+            }
+
+            document.write("<br/>")
+            m= m-2;
+        
+        }
+
+        </script>
+        
+    </body>
+    </html>
